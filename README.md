@@ -1,3 +1,3 @@
-# Boat
+# anirudhbs.github.io
 
-I don't know why it's called Boat.
+[anirudhbs.github.io](https://anirudhbs.github.io)

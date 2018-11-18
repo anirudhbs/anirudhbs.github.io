@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Grenze&display=swap");
+@import "normalize";
+@import "breakpoints";
+
+body {
+  font-family: "Grenze", serif;
+  background-color: #135d54;
+  font-size: 1.3em;
+  color: #f9ddbd;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.name {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+}
+
+.work {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 2vh;
+}
+
+.rounded {
+  border-radius: 50%;
+  align-self: center;
+  overflow: hidden;
+  width: 40vw;
+
+  @include desktop {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.social-container {
+  align-content: flex-end;
+
+  @include desktop {
+    vertical-align: bottom;
+  }
+}
+
+.social--link {
+  transition: 0.1s all;
+}
+
+.social--twitter {
+  &:hover {
+    color: #1da1f2;
+  }
+}
+
+.social--github {
+  &:hover {
+    color: #6cc644;
+  }
+}
+
+.social--email {
+  &:hover {
+    color: #d44638;
+  }
+}
+
+.social--work {
+  &:hover {
+    color: #ffa500;
+  }
+}
+
+li {
+  width: 100%;
+  text-align: center;
+  margin-top: 5vh;
+}
