@@ -4,21 +4,37 @@
 
 body {
   font-family: "Grenze", serif;
-  background-color: #135d54;
+  background-color: #f0f0f0;
+  color: #000;
   font-size: 1.3em;
-  color: #f9ddbd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
 a {
   color: unset;
   text-decoration: none;
-}
+  transition: 0.1s all;
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
+  &.social-- {
+    &email:hover {
+      color: #d44638;
+    }
+
+    &work:hover {
+      color: #ffa500;
+    }
+
+    &github:hover {
+      color: #6cc644;
+    }
+
+    &twitter:hover {
+      color: #1da1f2;
+    }
+  }
 }
 
 .name {
@@ -33,76 +49,20 @@ a {
   margin-top: 2vh;
 }
 
-.rounded {
-  border-radius: 50%;
-  align-self: center;
-  overflow: hidden;
-  width: 40vw;
-
-  @include desktop {
-    width: 12vw;
-    height: 12vw;
-  }
-}
-
-ul {
+ul.social-container {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  width: 100%;
-  flex-wrap: nowrap;
-  justify-content: space-around;
   flex-direction: column;
 
   @include desktop {
     flex-direction: row;
   }
-}
 
-li {
-  margin: 0;
-  padding: 0;
-}
-
-.social-container {
-  align-content: flex-end;
-
-  @include desktop {
-    vertical-align: bottom;
+  li {
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 5vh;
   }
-}
-
-.social--link {
-  transition: 0.1s all;
-}
-
-.social--twitter {
-  &:hover {
-    color: #1da1f2;
-  }
-}
-
-.social--github {
-  &:hover {
-    color: #6cc644;
-  }
-}
-
-.social--email {
-  &:hover {
-    color: #d44638;
-  }
-}
-
-.social--work {
-  &:hover {
-    color: #ffa500;
-  }
-}
-
-li {
-  width: 100%;
-  text-align: center;
-  margin-top: 5vh;
 }
