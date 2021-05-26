@@ -5,7 +5,7 @@
   "author": "Anirudh Bangalore Srinivas <anirudhbs@gmail.com>",
   "scripts": {
     "start": "npm run dev",
-    "dev": "parcel ./src/public/index.html",
+    "dev": "parcel ./src/public/index.html --open",
     "build": "rimraf dist && parcel build ./src/public/index.html --no-source-maps",
     "deploy": "gh-pages -d dist"
   },
