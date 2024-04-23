@@ -1,26 +1,30 @@
-@import url("https://fonts.googleapis.com/css?family=Grenze&display=swap");
 @import "normalize";
 @import "breakpoints";
 
 body {
-  font-family: "Grenze", serif;
+  font-family: system-ui;
   background-color: #f0f0f0;
-  color: #000;
-  font-size: 1.3em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border: 1em solid #000;
   height: 100vh;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 1.2em;
+  padding-left: 1em;
+  padding-top: 1em;
 }
 
 a {
   color: unset;
-  text-decoration: none;
+  text-decoration: underline;
   transition: 0.1s all;
 
-  &.social-- {
+  &.socials-- {
     &email:hover {
       color: #d44638;
+    }
+
+    &linkedin:hover {
+      color: #0077b5;
     }
 
     &github:hover {
@@ -29,26 +33,27 @@ a {
   }
 }
 
-.name {
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
+section {
+  margin-bottom: 0.5em;
+
+  &.name {
+    font-size: 2em;
+  }
 }
 
+
 ul.socials {
-  margin: 0;
-  padding: 0;
   list-style: none;
+  padding-left: 0;
   display: flex;
   flex-direction: column;
 
-  @include desktop {
-    flex-direction: row;
+  li {
+    margin-bottom: 1em;
   }
 
-  li {
-    flex-grow: 1;
-    text-align: center;
-    margin-top: 5vh;
+  @include desktop {
+    flex-direction: row;
+    gap: 2em;
   }
 }
