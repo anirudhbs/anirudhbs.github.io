@@ -18,6 +18,10 @@ a {
   text-decoration: underline;
   transition: 0.1s all;
 
+  &:visited {
+    color: unset;
+  }
+
   &.socials-- {
     &email:hover {
       color: #d44638;
