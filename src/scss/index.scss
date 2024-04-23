@@ -23,16 +23,8 @@ a {
       color: #d44638;
     }
 
-    &work:hover {
-      color: #ffa500;
-    }
-
     &github:hover {
       color: #6cc644;
-    }
-
-    &twitter:hover {
-      color: #1da1f2;
     }
   }
 }
@@ -43,13 +35,7 @@ a {
   font-size: 3em;
 }
 
-.work {
-  text-align: center;
-  font-size: 1.2em;
-  margin-top: 2vh;
-}
-
-ul.social-container {
+ul.socials {
   margin: 0;
   padding: 0;
   list-style: none;
